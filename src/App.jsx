@@ -3,9 +3,10 @@ import { Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/SideBar/index"
 import useDarkMode from "./hooks/useDarkMode";
+import { useEffect } from "react";
 function App() {
 
-  useDarkMode(true);
+ 
   return (
       <>
         <div className="flex overflow-hidden ">
