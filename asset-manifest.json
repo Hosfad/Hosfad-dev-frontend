@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Hosfad-dev-frontend/static/css/main.ff54bddd.css",
+    "main.js": "/Hosfad-dev-frontend/static/js/main.ddb9c390.js",
+    "static/media/logoCircle.gif": "/Hosfad-dev-frontend/static/media/logoCircle.bca6c3a8357ab5916cff.gif",
+    "index.html": "/Hosfad-dev-frontend/index.html",
+    "main.ff54bddd.css.map": "/Hosfad-dev-frontend/static/css/main.ff54bddd.css.map",
+    "main.ddb9c390.js.map": "/Hosfad-dev-frontend/static/js/main.ddb9c390.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff54bddd.css",
+    "static/js/main.ddb9c390.js"
+  ]
+}
