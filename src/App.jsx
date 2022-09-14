@@ -14,7 +14,7 @@ function App() {
         <div className="flex overflow-hidden ">
           <Sidebar></Sidebar>
           <Routes location={window.location} key={window.location.pathname}>
-          <Route path="/" element={<Home></Home>}/>
+          <Route path="*" element={<Home></Home>}/>
           </Routes>
         </div>
       </>
