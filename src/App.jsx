@@ -5,7 +5,6 @@ import Sidebar from "./components/SideBar/index"
 import useDarkMode from "./hooks/useDarkMode";
 function App() {
 
-  useDarkMode(true)
 
 
   
@@ -15,7 +14,7 @@ function App() {
           <Sidebar></Sidebar>
           <Routes location={window.location} key={window.location.pathname}>
           <Route path="*" element={<Home></Home>}/>
-          
+
           </Routes>
         </div>
       </>
