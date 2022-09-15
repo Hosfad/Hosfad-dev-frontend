@@ -1,6 +1,4 @@
-import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
-import { CgWebsite } from 'react-icons/cg';
-import { FaBars, FaFire, FaMoon, FaPoo, FaSun } from 'react-icons/fa';
+import { FaBars, FaMoon, FaRobot, FaSun, FaWindowClose } from 'react-icons/fa';
 import { SiDiscord } from 'react-icons/si';
 import { DiHeroku } from 'react-icons/di';
 
@@ -8,7 +6,6 @@ import useDarkMode from '../../hooks/useDarkMode';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import e from 'cors';
 
 const SideBar = () => {
   const vis = getWindowDimensions().width > 500 ? true : false ;
@@ -36,14 +33,13 @@ const SideBar = () => {
 
       <div className={`fixed overflow-hidden top-0 left-0 h-screen flex flex-col z-10
                     bg-white dark:bg-gray-900 shadow-lg w-16 ${!open && "hidden"}`} >
-                      
+          <CloseSide icon={<FaWindowClose size="28"/>} toolTip="Home" setOpen={setOpen}   />
           <SideBarIcon icon={<DiHeroku size="28"/>} toolTip="Home" setOpen={setOpen} link="" />
           <ThemeIcon setOpen={setOpen} className="mt-20"></ThemeIcon>
 
           <Divider />
-          <SideBarIcon icon={<CgWebsite size="22"/>} toolTip="Web development" setOpen={setOpen} link="web-development" />
           <SideBarIcon icon={<SiDiscord size="22"/>} toolTip="Discord bots" setOpen={setOpen} link="discord-bots" />
-          <SideBarIcon icon={<FaPoo size="20"/>} toolTip="OSRS bots" setOpen={setOpen} link="osrs-bots" />
+          <SideBarIcon icon={<FaRobot size="20"/>} toolTip="OSRS bots" setOpen={setOpen}  />
           
       </div>
     );
@@ -78,7 +74,21 @@ const SideBarIcon = ({ icon, toolTip  ,setOpen ,link}) => (
   </ConditionalLink>
 
 );
+const CloseSide = ({ icon, toolTip  ,setOpen }) => (
+ 
+  <div className="sidebar-icon group"onClick={()=>{   setOpen(false)}}  >
+    {icon}
 
+    {
+      toolTip != null ? <span class="sidebar-tooltip group hover:scale-100">
+          {toolTip}
+      </span> : <></>
+    }
+    
+  </div>
+  
+
+);
 
 const ThemeIcon = (setOpen) => {
   const [darkTheme, setDarkTheme] = useDarkMode();
