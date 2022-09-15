@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff54bddd.css",
-    "main.js": "/static/js/main.7ce5c9f2.js",
+    "main.css": "/static/css/main.db3e8caa.css",
+    "main.js": "/static/js/main.91a08940.js",
     "static/media/logoCircle.gif": "/static/media/logoCircle.bca6c3a8357ab5916cff.gif",
+    "static/media/news.png": "/static/media/news.4d2dd20088d990e38f7e.png",
+    "static/media/duel.png": "/static/media/duel.5a484fe0ba8d8d2c4b05.png",
+    "static/media/killcount.png": "/static/media/killcount.cd74e8c6c0261bcda600.png",
+    "static/media/sellers.png": "/static/media/sellers.e1e94069700bc4da2ff1.png",
+    "static/media/player.png": "/static/media/player.11fa4ef361d2d7e89a90.png",
+    "static/media/darts.png": "/static/media/darts.f23a6cab28c73bdb1b53.png",
+    "static/media/wiki.png": "/static/media/wiki.c4b448a27e7186c44b74.png",
+    "static/media/profile.png": "/static/media/profile.5e9214941b6fc046af53.png",
+    "static/media/review.png": "/static/media/review.1e8e3ce90c46cc55ea3a.png",
     "index.html": "/index.html",
-    "main.ff54bddd.css.map": "/static/css/main.ff54bddd.css.map",
-    "main.7ce5c9f2.js.map": "/static/js/main.7ce5c9f2.js.map"
+    "main.db3e8caa.css.map": "/static/css/main.db3e8caa.css.map",
+    "main.91a08940.js.map": "/static/js/main.91a08940.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff54bddd.css",
-    "static/js/main.7ce5c9f2.js"
+    "static/css/main.db3e8caa.css",
+    "static/js/main.91a08940.js"
   ]
 }
