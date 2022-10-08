@@ -20,6 +20,9 @@ filter: blur(0);
 transform: translateX(0);
 
 }
+.flipImage{
+  transform: scaleX(-1);
+}
 .hide1{
   opacity: 0;
   transition: all 1s;
@@ -47,7 +50,7 @@ filter: blur(0);
     @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
     text-white bg-gray-900 
     text-xs font-bold 
-    transition-all duration-100 scale-0 z-10 origin-left;
+    transition-all duration-100  z-10 origin-left;
   }
 
   .sidebar-hr {

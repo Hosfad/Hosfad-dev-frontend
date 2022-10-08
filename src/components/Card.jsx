@@ -17,9 +17,9 @@ function Card() {
  })
   return (
     
-<section class=" container mx-auto p-10 md:p-20 transform duration-500   text-black dark:text-white ">
+<section class=" container mx-auto p-10 md:p-20 transform duration-500   text-black dark:text-white z-7">
 
-        <article class="flex flex-wrap  md:flex-nowrap border-4 border-[#0dcdbd] dark:bg-gray-900 rounded-2xl  shadow-lg mx-auto w-fit  ">
+        <article class="flex flex-wrap  md:flex-nowrap border-4 border-[#0dcdbd] dark:bg-gray-900 rounded-2xl z-7  shadow-lg mx-auto w-fit  ">
             <img class="w-full md:w-40 md:h-40 h-full rounded-2xl " src={background} alt="" />
             <div class="p-6 my-auto hide1">
             <p class="text-[#0dcdbd]  text-center text-2xl">About me</p>

@@ -20,6 +20,13 @@ function Home() {
       <Card></Card>
 
       <ServicesCard></ServicesCard>
+     <div className='flex gird grid-cols-2 gap-8 items-center justify-center mb-8'>
+     <img src="https://raw.githubusercontent.com/Hosfad/github-stats-transparent/output/generated/overview.svg" alt="Hosfad Overview" />
+
+<img src="https://raw.githubusercontent.com/Hosfad/github-stats-transparent/output/generated/languages.svg" alt="Hosfad Languages" />
+     </div>
+
+
       </div>
   
     </div>

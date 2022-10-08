@@ -30,10 +30,12 @@ const SideBar = () => {
   })
   if (open){
     return (
+      <div>
 
       <div className={`fixed overflow-hidden top-0 left-0 h-screen flex flex-col z-10
                     bg-white dark:bg-gray-900 shadow-lg w-16 ${!open && "hidden"}`} >
           <CloseSide icon={<FaWindowClose size="28"/>} toolTip="Home" setOpen={setOpen}   />
+
           <SideBarIcon icon={<DiHeroku size="28"/>} toolTip="Home" setOpen={setOpen} link="" />
           <ThemeIcon setOpen={setOpen} className="mt-20"></ThemeIcon>
 
@@ -42,10 +44,14 @@ const SideBar = () => {
           <SideBarIcon icon={<FaRobot size="20"/>} toolTip="OSRS bots" setOpen={setOpen}  />
           
       </div>
+
+      </div>
+
     );
   }else{
     return (<div className='fixed top-0 left-0 bg-transparent w-10 h-auto  z-9'>
       <FaBars className='mx-auto scale-125 mt-3  text-[#0dcdbd]' onClick={()=>{ setOpen(!open)}}></FaBars>
+
       </div>)
   }
 
